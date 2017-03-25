@@ -1,0 +1,35 @@
+{
+  "name": "lottery",
+  "version": "1.0.0",
+  "description": "A lottery of high concurrency realized by Node.",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CompileYouth/lottery.git"
+  },
+  "keywords": [
+    "High",
+    "Concurrency",
+    "Node"
+  ],
+  "author": "CompileYouth <CompileYouth@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CompileYouth/lottery/issues"
+  },
+  "homepage": "https://github.com/CompileYouth/lottery#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "eslint": "^3.18.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "react": "^15.4.2"
+  }
+}
