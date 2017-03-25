@@ -1,5 +1,5 @@
-import app from './lib/app';
 import http from 'http';
+import app from './lib/app';
 
 const httpServer = http.createServer(app);
 httpServer.listen(8080, () => {

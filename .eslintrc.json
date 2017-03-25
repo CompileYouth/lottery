@@ -4,6 +4,9 @@
         "import"
     ],
     "rules": {
-      
+      "comma-dangle": "off"
+    },
+    "globals": {
+      "global": true
     }
 }
