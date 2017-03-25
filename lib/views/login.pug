@@ -2,4 +2,13 @@ extends ./basic.pug
 
 
 block append body
-  .container Hello Pug
+  .container 
+  form.login-form(method='post', action='/login', accept-charset='UTF-8')
+    h2 Sign in to Lottery
+    #loginNameGroup
+      label.control-label(for='loginNameField') Username or email address:
+      input(type='text', id='loginNameField', name='login_name', autofocus, autocomplete='off')
+    #passwordGroup
+      label.control-label(for='passwordField') Password
+      input(type='password', id='passwordField', name='password', value='')
+    input(type='submit', name='login', value='Login')
