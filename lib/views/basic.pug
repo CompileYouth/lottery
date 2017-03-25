@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='initial-scale=1.0001, minimum-scale=1.0001, maximum-scale=1.0001, user-scalable=no')
+    title= title ? (title) : 'Lottery'
+    if req.user
+      meta(name='lottery-username', value=req.user.username)
+    block meta
+    block styles
+      link(rel='stylesheet', href='https://at.alicdn.com/t/font_uu24y5z8alwhfr.css')
+    block scripts
+  body
+    block body
