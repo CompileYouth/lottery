@@ -1,5 +1,10 @@
 extends ./basic.pug
 
+block append styles
+  link(rel='stylesheet', href=app.getAssetUrl('/css/login.min.css'))
+
+block append scripts
+  script(src=app.getAssetUrl('/js/login.min.js'))
 
 block append body
   .container 
