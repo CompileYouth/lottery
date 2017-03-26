@@ -4,7 +4,9 @@
         "import"
     ],
     "rules": {
-      "comma-dangle": "off"
+      "comma-dangle": "off",
+      "no-prototype-builtins": "off",
+      "class-methods-use-this": "off"
     },
     "globals": {
       "global": true,
