@@ -7,6 +7,7 @@
       "comma-dangle": "off"
     },
     "globals": {
-      "global": true
+      "global": true,
+      "$": true
     }
 }
