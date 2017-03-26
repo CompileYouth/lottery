@@ -1,1 +1,3 @@
-console.log('This is game.js');
+const gameBtn = $('.play-btn');
+
+console.log(gameBtn);

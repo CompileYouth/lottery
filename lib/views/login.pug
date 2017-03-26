@@ -7,7 +7,7 @@ block append scripts
   script(src=app.getAssetUrl('/js/login.min.js'))
 
 block append body
-  .container 
+  #lottery-user-login.container 
   form.login-form(method='post', action='/login', accept-charset='UTF-8')
     h2 Sign in to Lottery
     #loginNameGroup

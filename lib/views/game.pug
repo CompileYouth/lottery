@@ -1,6 +1,11 @@
 extends ./basic.pug
 
+block append styles
+  link(rel='stylesheet', href=app.getAssetUrl('/css/game.min.css'))
+
+block append scripts
+  script(src=app.getAssetUrl('/js/game.min.js'))
 
 block append body
-  .container 
+  #lottery-game.container 
     button.play-btn Play Game
