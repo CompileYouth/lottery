@@ -5,7 +5,7 @@ const webpack = require('webpack');
 module.exports = {
   context: path.resolve('./client'),
   entry: {
-    vendor: ['babel-polyfill', 'jquery'],
+    vendor: ['jquery'],
     login: ['./user/login/index.js', './user/login/res/index.less'],
     game: ['./game/index.js', './game/res/index.less']
   },
