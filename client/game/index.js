@@ -1,3 +1,12 @@
-const gameBtn = $('.play-btn');
+$(document).ready(() => {
+  const $gameBtn = $('#play-btn');
 
-console.log(gameBtn);
+  $gameBtn.on('click', () => {
+    $.ajax({
+      url: '/lottery',
+      method: 'POST'
+    }).done((data) => {
+      
+    });
+  });
+});
