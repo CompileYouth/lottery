@@ -33,11 +33,20 @@ html, body {
   border: 1px solid #333;
 }
 
+#game-board > .cell.selected {
+  background-color: #38f;
+}
+
 .cell-1, .cell-2, .cell-3, .cell-4, .cell-5, .cell-6 {
   margin-bottom: @cell-gap;
 }
 .cell-1, .cell-4, .cell-7, .cell-2, .cell-5, .cell-8 {
   margin-right: @cell-gap;
+}
+
+.cell-1, .cell-3, .cell-8 {
+  line-height: @cell-width;
+  text-align: center;
 }
 
 #play-btn {
@@ -46,6 +55,7 @@ html, body {
   line-height: @cell-width;
   background-color: #38f;
   color: #fff;
+  user-select: none;
 }
 #play-btn.disable {
   background-color: #999;
