@@ -1,0 +1,8 @@
+extends ./basic.pug
+
+block append styles
+  link(rel='stylesheet', href=app.getAssetUrl('/css/game.min.css'))
+
+block append body
+  #lottery-game.container 
+    Game is over.
